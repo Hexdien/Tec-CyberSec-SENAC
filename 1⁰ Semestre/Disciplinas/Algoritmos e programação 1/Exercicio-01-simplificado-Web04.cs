@@ -1,6 +1,4 @@
-﻿
-
-Continue cont = new Continue();
+﻿Continue cont = new Continue();
 
 cont.digitarNumero();
 
@@ -12,17 +10,17 @@ List<int> lista = new List<int>();
     {
         while (true)
         {
-            num = int.TryParse(Console.ReadLine(), out int value)
+            this.num = int.TryParse(Console.ReadLine(), out int value)
                 ? value
                 : 0;
 
-            if (num < 0)
+            if (this.num < 0)
             {
                 Console.WriteLine("Número negativo digitado.");
                 break;
             }
 
-            lista.Add(num);
+            this.lista.Add(num);
 
             continue;
         }
